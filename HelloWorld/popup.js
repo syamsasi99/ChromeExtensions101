@@ -9,9 +9,7 @@ $(function(){
     });
 
     $('#my_name').keyup(function(){
-       chrome.storage.sync.get(['name'],function(data){
          $('#hello').text('Welcome ' + $('#my_name').val())
-      });
     })
 
     $('#saveName').click(function(){
