@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Hello World",
+  "description": "My first chrome extension",
+  "version": "1.0",
+  "icons": {
+    "128": "128.png",
+    "48": "48.png"
+    },
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+  "browser_action": {
+    "default_icon": "48.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+        "storage",
+        "notifications",
+        "contextMenus"
+      ],
+  "options_page": "options.html"
+}
